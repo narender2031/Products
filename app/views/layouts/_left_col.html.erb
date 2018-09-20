@@ -1,0 +1,25 @@
+
+<div class="col-md-3 left_col" id="menu-bar">
+  <div class="left_col scroll-view">
+    <div class="navbar nav_title" id="panel1">
+      <%#= link_to admin_products_path, class:"site_title" do %>
+          <%#= image_tag "logo-14.png", class: "dash-logo" %>
+      <%# end %>  
+    </div>
+    <div class="clearfix">
+    
+    </div>
+    <div id="sidebar-menu" class="main_menu_side hidden_print main_menu">
+      <div class="menu_section active">
+        <ul class="nav side-menu">
+          <li class="<%= 'active' if active == 'Dashboard'  %>">
+            <%= link_to admin_products_path do %>
+              <i class="fa fa-home"></i>
+                Dashboard
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

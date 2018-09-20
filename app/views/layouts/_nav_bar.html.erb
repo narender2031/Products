@@ -1,0 +1,25 @@
+<div class="top_nav">
+  <div class="nav_menu nav-white">
+    <nav>
+      <div class="">
+        <% if active == "Dashboard" || active == "Dashboard" && active == "Analytics" || active == "Analytics" && active == "Invites" || active == "Invites"  %>
+          <div class"row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <%= link_to add_product_path do %>
+                <span class="add_product"> Add Product</span>
+                <% end %>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <%= link_to logout_path do %>
+                  <p class="" style="float: right;;color:#444;margin-right: 17px;margin-top: 10px;"><i class="fa fa-power-off" aria-hidden="true"></i>  <%= current_user.first_name %> <%= current_user.last_name %></p>
+                <% end %>
+              </div>
+              
+            </div>
+          </div> 
+        <% end %>
+      </div>    
+    </nav>
+  </div>
+</div>

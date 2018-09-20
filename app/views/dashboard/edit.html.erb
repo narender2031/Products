@@ -1,0 +1,92 @@
+<meta name="viewport" content="width= device-width initail-scale=1" />
+<body class="dash-body nav-sm" id="dash">
+    <div class="container body">
+        <div class="main_container">
+            <%= render partial: "layouts/left_col", :locals => {active: "Dashboard"} %>
+            <%= render partial: "layouts/nav_bar", :locals => {active: "Dashboard"} %>
+            <div class="right_col">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <%= form_for @product, url: product_path  do |f|  %>
+                            <fieldset>
+                                <% flash.each do |key, value| %>
+                                    <div class="alert alert"><%= key %> <%= value %></div>
+                                <% end %>
+                                <div class="form-group">
+                                    <%= f.hidden_field :id, placeholder: "First Name", class: "product_field", :autocomplete => :off%>
+                                        <div class="col-md-12 col-sm-12 col-xs-12"> 
+                                            <div class="col-md-1 col-sm-1 col-xs-6">
+                                            <label>Name</label>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                                <%= f.text_field :name, placeholder: "Item Name", class: "product_field", :autocomplete => :off%>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12 col-sm-12 col-xs-12"> 
+                                        <div class="col-md-1 col-sm-1 col-xs-6">
+                                            <label>SKU ID</label>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <%= f.text_field :sku_id, placeholder: "SKU ID", class: "product_field", :autocomplete => :off%>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12 col-sm-12 col-xs-12"> 
+                                        <div class="col-md-1 col-sm-1 col-xs-6">
+                                            <label>Expiry</label>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <%= f.text_field :expire_date, placeholder: "Expiry e.g 20-02-2018", class: "product_field", :autocomplete => :off%>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12 col-sm-12 col-xs-12"> 
+                                        <div class="col-md-1 col-sm-1 col-xs-6">
+                                            <label>Price</label>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                            <%= f.text_field :price, placeholder: "Price", class: "product_field", :autocomplete => :off%>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12 col-sm-12 col-xs-12"> 
+                                        <div class="col-md-1 col-sm-1 col-xs-6">
+                                            <label>Categories</label>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                            <%= text_field_tag :categories, "", placeholder: "Catgories e.g men's, bottam", name:"product[categories]", class: "product_field", :autocomplete => :off, value: @product.categories.join(",")%>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="-group">
+                                    <div class="col-md-12 col-sm-12 col-xs-12"> 
+                                        <div class="col-md-1 col-sm-1 col-xs-6">
+                                            <label>Tags</label>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                            <%= text_field_tag :tags, "", placeholder: "tags e.g men's, bottam", class: "product_field", name:"product[tags]", :autocomplete => :off, value: @product.tags.join(",")%>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-dm-3">
+                                    <div class="action">
+                                        <%if  @product.id.present? %>
+                                            <%= f.submit "Update", class: "btn btn-success center login-submit",  id:"login"%>
+                                        <% else %>
+                                            <%= f.submit "Create", class: "btn btn-success center login-submit",  id:"login"%>
+                                        <% end %>  
+                                    </div> 
+                                </div> 
+                            </fieldset>     
+                        <% end %>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

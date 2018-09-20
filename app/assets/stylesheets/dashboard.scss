@@ -1,0 +1,244 @@
+.profile_status{
+    color: #444;
+    font-size: 17px;
+    text-align: center;
+}
+.profile_panel_dash{
+    text-align: center;
+    border-right: 1px solid #444;
+}
+.totalFollower{
+    border-right: 1px solid #444;
+    text-align: center;
+}
+.totalFollowing{
+    text-align: center;
+}
+.userImage{
+    width: 46%;
+    border: 1px solid #444;
+    border-radius: 15px;
+}
+.editProfilePage{
+    border: 2px solid #444;
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #444;
+}
+.editProfilePage:hover{
+    border: 2px solid #e15258;
+    color: #e15258;
+}
+.editProfile{
+    text-align: center;
+    margin-top: 30px;
+}
+.profileFields{
+    padding: 4px;
+    width: 50%;
+    color: #444;
+    border: 1px solid #444;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.Upload{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #444;
+}
+.SubmitProfileInfo{
+    width: 30%;
+    color: #444;
+    border: 1px solid;
+    padding: 4px;
+    border-radius: 5px;
+}
+.searchUserButton{
+    width: 40%;
+    padding: 4px;
+    border: 2px solid #60bd6a;
+    background: #60bd5a;
+    color: #fff;
+    border-radius: 14px;
+    margin-bottom: 10px;
+}
+.searchUserButton:hover{
+    border: 2px solid #60bd6a;
+    background: none;
+    color: #60bd6a;
+}
+.UserField{
+    width: 80%;
+    padding: 7px;
+    border: 1px solid #444;
+    color: #444;
+    border-radius: 19px;
+    margin-bottom: 10px;
+}
+.subs{
+    border: 1px solid #60bd6a;
+    padding: 7px;
+    color: #fff;
+    background: #60bd6a;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+.Unsunscribe {
+    text-align: center;
+    margin-top: 42px;
+    border: 2px solid #444;
+    padding: 4px;
+    padding-left: 47px;
+    border-radius: 3px;
+    padding-right: 47px;
+    color: #444;
+}
+.Unsunscribe:hover{
+    border: 2px solid #e15258;
+    color: #e15258;
+}
+
+.UnsunscribeUser{
+    margin-top: 60px;
+    text-align: center;
+}
+.total_snap_count
+{
+    text-align: center;
+    font-size: 38px !important;
+    color: #444;
+}
+.snap_head{
+    text-align: center;
+    color: #444;
+}
+.SnapUpload{
+    padding: 4px;
+    margin-top: 11px;
+    padding-right: 34px;
+    padding-left: 34px;
+    border: 2px solid #60bd6a;
+    color: #fff;
+    background: #60bd6a;
+    border-radius: 6px;
+}
+.SnapUpload:hover{
+    border: 2px solid #60bd6a;
+    background: none;
+    color: #60bd6a;
+}
+.uploadField{
+    margin-left: 50px;
+}
+.time{
+    color: #444;
+    margin-top: 18px;
+}
+.user_name_snaps{
+    color: #444;
+    margin-left: 10px;
+}
+.name{
+    color: #444;
+    font-size: 15px;
+}
+.UserName{
+    color: #444;
+}
+.follow_modal{
+    background: none !important;
+    border: navajowhite !important;
+    color: #444 !important;
+    margin-top: -10px !important;
+}
+.follow:hover{
+    font-size: 20px;
+    color: #60bd6a;
+
+}
+.modal-title{
+    text-align: center !important;
+    position: relative !important;
+    top: 10px !important;
+}
+.modal-header{
+    padding: 0px !important;
+}
+.profile_btn{
+    margin-left: 20px;
+    border: 2px solid;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #444;
+}
+.unfollow_user{
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #60bd6a;
+    color: #fff;
+    border: 1px solid #60bd6a;
+}
+.t_snap{
+    text-align: center;
+    color: #444;
+    font-size: 58px !important;
+}
+.t_snap_header{
+    text-align: center;
+    color: #444;
+}
+.result_header{
+    text-align: center;
+    color: #444; 
+}
+.userName-search{
+    margin-top: 20px;
+    color: #444;
+    font-size: 18px;
+}
+@media only screen and (max-width: 991px) {
+    .profile_panel_dash {
+        text-align: center;
+        border-right:none !important;
+    }
+}
+.profile_btn:hover{
+    border: 2px solid #60bd6a;
+    color: #60bd6a;
+}
+.error-snap{
+    display: none;
+    border: 1px solid #e15258;
+    padding: 3px;
+    text-align: center;
+    color: #fff;
+    background: #e15258;
+    height: 20px;
+    padding-top: initial;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    border-radius: 7px;
+}
+
+.product_field{
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #444;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.add_product{   position: relative;
+    top: 15px;
+    left: 15px;
+    border: 1px solid #444;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 6px;
+}
